@@ -1,0 +1,25 @@
+ {% extends 'women/base.html' %}
+
+ {% block content %}
+ <h1>{{title}}</h1>
+
+<!-- form создает форму на странице
+ action указиваем к какому url обращатся во время отправки данных
+ method метод передачи данных, для безопасносни
+ для защиты  от копирование страницы, чтобы небыло перехвата страницы(создает токен)
+form.as_p это ф-я-->
+
+ <form action="{% url 'add_page' %}" method="post" enctype="multipart/form-data">
+  {%  csrf_token %}
+
+  <div class="form-error">{{ form.non_field_errors}}</div>
+
+  {% for f in form %}
+  <p><label class="form-label" for="{{ f.id_for_label }}">{{f.label}}: </label>{{ f }}</p>
+  <div class="form-error">{{f.errors}}</div>
+ {% endfor %}
+
+
+  <button type="submit">Добавить</button>
+ </form>
+ {% endblock %}

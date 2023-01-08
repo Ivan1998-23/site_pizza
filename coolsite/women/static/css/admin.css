@@ -1,0 +1,19 @@
+#header {
+    background: #02315E;
+}
+.module h2, .module caption, .inline-group h2 {
+    background: #B9848C;
+}
+div.breadcrumbs {
+    background: #2F70AF
+}
+
+.submit-row input {
+    background: #2F70AF
+}
+.button.default {
+    background: #B9848C
+}
+.object-tools a:visited {
+    background: #806491
+}
