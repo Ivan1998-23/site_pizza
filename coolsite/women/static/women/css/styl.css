@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@1&display=swap');
+body {
+    margin:0;
+    background: #ECECE2;
+}
+#wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+.hed {
+    font-family: 'Arial';
+    background: #423930;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    padding: 10px 15px 10px 15px;
+}
+
+/*
+#423930
+#756C63
+#556672
+#DADEDF
+#ECECE2
+*/
+
+
+/*                       elemet menu          */
+ul.mainmenu {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	height: 80px;
+	color: #DADEDF;
+	font-size: 15px;;
+	overflow: hidden;
+
+}
+ul.mainmenu li {
+	float: left;
+	margin: 5px 20px 5px 20px;
+}
+li.menu_buttom {
+    padding: 0 10px  0 10px;
+    border: 1px solid #959A82;
+    background: #DADEDF;
+}
+
+ul.mainmenu li a {
+	color: #fdc073;
+	text-decoration: none;
+}
+ul.mainmenu li a:hover {
+	color: #FDA83D;
+}
+
+
+.menu_button {
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 10px 20px;
+    position: relative;
+    border: 2px solid #f1c40f;
+    color: #f1c40f;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0;
+}
+.menu_button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: .4s;
+}
+.menu_button:hover:after {
+    border-color: #f1c40f;
+    width: calc(100% - 10px);
+    height: calc(100% + 10px);
+}
+.menuLogotype {
+    margin: 0 30px 0 30px;
+}
+.logotype {
+	background: url('../images/pizza.png') no-repeat;
+	background-size: 100px;
+	border-radius: 50%;
+	display: block;
+	height: 100px;
+	width: 100px;
+	transition: 0.7s;
+}
+.logotype:hover  {
+    transform: rotate(360deg);
+}
+.leftmenu {
+    display: flex;
+    margin: 0 10px 0 100px;
+    align-items: center;
+}
+.rightmenu {
+    display: flex;
+    align-items: center;
+    margin: 0 50px 0 30px;
+    color: #fdc073;
+	font-size: 15px;
+	overflow: hidden;
+	font-family: 'Montserrat', sans-serif;
+}
+.rightmenu a {
+	color: #fdc073;
+	text-decoration: none;
+}
+.rightmenu a:hover {
+	color: #FDA83D;
+}
+.indent {
+    margin: 0 100px 0 100px;
+    min-height:490px;
+}
+/*---------------------SIDEBAR-------------*/
+
+.sidebar-content {
+	width: 100%;
+	min-height:490px;
+	display: flex;
+}
+
+.sidebar {
+	margin: 0;
+	background: #556672;
+	border-right: 1px solid #ccc;
+	min-height: 100%;
+}
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+	width: 200px;
+	min-height: 100%;
+	margin: 0;
+	padding: 0   10px 0 20px;
+	list-style: none;
+	font-size: 15px;
+	height:auto;
+}
+.global_menu {
+    display: flex;
+    flex-direction: column;
+	width: auto;
+	min-height: 100%;
+	list-style: none;
+    font-size: 25px;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+
+
+.selected {
+    margin: 30px 15px 15px 15px;
+    padding: 2px 0 0 15px;
+    font-size: 15px;
+    color: #ecece2;
+}
+.sidebar ul li {
+	color:#ffb40b;
+	margin:10px 10px 10px 10px;
+    font-family: 'PT Serif Caption', serif;
+}
+.sidebar ul li a {
+	color: #ffb40b;
+	text-decoration: none;
+}
+.sidebar ul li a:hover {
+    color: #e98a12;
+}
+
+/*---------------------END----SIDEBAR-------------*/
+
+/*-----------------------CONTENT----------------*/
+.thumb {
+	width: 200px;
+	height: auto;
+}
+.content-text {
+	margin: 10px 10px 0 10px;
+	margin: 10px 10px 0 10px;
+	color: #000;
+	min-height:548px;
+	font-size: 20px;
+	font-family: Yandex Sans Display Light;
+}
+.content-text h2 {
+    font-size: 32px;
+    margin: 10px;
+}
+.content {
+	width: 100%;
+	background:#dadedf;
+	height:100%;
+}
+ul.list-articles {
+    display:flex;
+	list-style: none;
+	margin: 10px;
+	padding: 0;
+	width:auto;
+    justify-content: space-evenly;
+}
+ul.list-articles li {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background: #eee;
+    margin:5px;
+    padding:5px;
+    width: 30%;
+}
+
+.content_about {
+    margin:0 10px 0 10px;
+}
+.content_about p {
+margin:0;
+}
+
+div.article-panel {
+    background: #eee;
+    padding: 5px 10px 5px 10px;
+    color: #555;
+}
+.first {
+    margin:5px;
+}
+
+img.img-article-left {
+	max-width: 300px;
+	height: auto;
+	float: left;
+	padding: 0 10px 10px 0;
+}
+
+img.img-article-left.thumb {
+	max-width: 150px;
+	height: auto;
+}
+
+p.link-read-post a {
+	padding: 10px;
+	margin:0;
+	min-width: 100px;
+	background: #333671;
+	color: #fff;
+	text-decoration: none;
+}
+/*--------------------END---CONTENT----------------*/
+/*------------------<1.2..3>--------------------------*/
+
+.list-pages {
+	text-align: center;
+	margin:0 0 10px 0;
+}
+.list-pages ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.list-pages ul li {
+	display: inline-block;
+	margin: 0 20px 0 0;
+}
+.list-pages a {
+	color: #556672;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.page-num {
+    text-decoration: none;
+    display: inline-block;
+    width: 50px;
+	height: 34px;
+	padding: 16px 0 0 0;
+    position: relative;
+    border:  2px solid #f1c40f;
+    border-radius: 30px;
+    color: #f1c40f;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0;
+}
+.page-num:hover {
+	box-shadow: 3px 3px 1px #d0d0d0;
+}
+.page-num-selected {
+	border: none;
+	color: #000;
+	font-size: 25px;
+}
+.page-num-selected:hover {
+	box-shadow: none;
+}
+/*------------------END <1.2..3>--------------------------*/
+/*------------------footer----------------------*/
+.footer {
+    padding: 10px;
+    height: auto;
+    background: #463e36;
+}
+.footer p {
+margin:0;
+}
+.share {
+    display:flex;
+}
+.share p {
+    margin: 10px 0 10px 0;
+}
+.share a {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin: 0 20px 0 0;
+}
+.share a.share-yt {
+	width: 100%;
+	height: 30px;
+	background: url('../images/share_yt.png') no-repeat 0 0
+}
+.share a.share-yt:hover {
+	width: 100%;
+	height: 30px;
+	background: url('../images/share_yt.png') no-repeat 0 -30px
+}
